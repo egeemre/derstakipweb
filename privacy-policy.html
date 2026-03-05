@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — DersTakip</title>
+    <title>Privacy Policy — Studyr</title>
     <meta name="description"
-        content="DersTakip Privacy Policy. Learn how we collect, use, and protect your personal information.">
+        content="Studyr Privacy Policy. Learn how we collect, use, and protect your personal information.">
     <meta name="robots" content="index, follow">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +21,8 @@
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <div class="logo-icon">📚</div>
-                DersTakip
+                <img src="assets/logo.svg" alt="Studyr Logo" class="logo-icon" width="48" height="48">
+                Studyr
             </a>
 
             <nav class="nav" id="nav">
@@ -30,6 +30,19 @@
                 <a href="index.html#features">Features</a>
                 <a href="privacy-policy.html">Privacy</a>
                 <a href="terms-of-service.html">Terms</a>
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langBtn">🌐 EN</button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <a href="privacy-policy.html" class="lang-option active">🇬🇧 English</a>
+                        <a href="tr/privacy-policy.html" class="lang-option">🇹🇷 Türkçe</a>
+                        <a href="de/privacy-policy.html" class="lang-option">🇩🇪 Deutsch</a>
+                        <a href="es/privacy-policy.html" class="lang-option">🇪🇸 Español</a>
+                        <a href="fr/privacy-policy.html" class="lang-option">🇫🇷 Français</a>
+                        <a href="it/privacy-policy.html" class="lang-option">🇮🇹 Italiano</a>
+                        <a href="ru/privacy-policy.html" class="lang-option">🇷🇺 Русский</a>
+                        <a href="zh/privacy-policy.html" class="lang-option">🇨🇳 中文</a>
+                    </div>
+                </div>
             </nav>
 
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
@@ -48,9 +61,9 @@
             <p class="effective-date">Effective Date: February 25, 2026</p>
 
             <p>
-                DersTakip ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains
+                Studyr ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains
                 how we collect, use, disclose, and safeguard your information when you use our mobile application
-                DersTakip (the "App"). Please read this privacy policy carefully. If you do not agree with the terms of
+                Studyr (the "App"). Please read this privacy policy carefully. If you do not agree with the terms of
                 this privacy policy, please do not access the App.
             </p>
 
@@ -83,7 +96,7 @@
             </ul>
 
             <h3>1.4 Subscription Information</h3>
-            <p>If you subscribe to DersTakip Pro, purchase and subscription data is processed by Apple (App Store)
+            <p>If you subscribe to Studyr Pro, purchase and subscription data is processed by Apple (App Store)
                 and/or Google (Google Play) and RevenueCat. We receive confirmation of your subscription status but do
                 not have access to your payment details (credit card numbers, etc.).</p>
 
@@ -153,7 +166,7 @@
                 <li><strong>Restriction:</strong> Request restriction of processing of your personal data</li>
             </ul>
             <p>To exercise any of these rights, please contact us at <a
-                    href="mailto:support@derstakip.com">support@derstakip.com</a>.</p>
+                    href="mailto:support@studyr.com">support@studyr.com</a>.</p>
 
             <h2>7. Children's Privacy</h2>
             <p>
@@ -179,7 +192,7 @@
             <h2>10. Contact Us</h2>
             <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
             <ul>
-                <li>Email: <a href="mailto:support@derstakip.com">support@derstakip.com</a></li>
+                <li>Email: <a href="mailto:support@studyr.com">support@studyr.com</a></li>
             </ul>
 
         </div>
@@ -191,8 +204,8 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <div class="logo-icon">📚</div>
-                        DersTakip
+                        <img src="assets/logo.svg" alt="Studyr Logo" class="logo-icon" width="48" height="48">
+                        Studyr
                     </a>
                     <p>Your AI-powered study companion. Upload, summarize, quiz, and organize — all in one app.</p>
                 </div>
@@ -206,14 +219,14 @@
                 <div>
                     <h4>Contact</h4>
                     <ul class="footer-links">
-                        <li><a href="mailto:support@derstakip.com">support@derstakip.com</a></li>
-                        <li><a href="https://apps.apple.com/app/derstakip" target="_blank" rel="noopener">App Store</a>
+                        <li><a href="mailto:support@studyr.com">support@studyr.com</a></li>
+                        <li><a href="https://apps.apple.com/app/studyr" target="_blank" rel="noopener">App Store</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>&copy; 2026 DersTakip. All rights reserved.</span>
+                <span>&copy; 2026 Studyr. All rights reserved.</span>
                 <span>Made with ❤️ for students everywhere</span>
             </div>
         </div>
@@ -232,6 +245,15 @@
                 nav.classList.remove('active');
             });
         });
+        const langBtn = document.getElementById('langBtn');
+        const langDropdown = document.getElementById('langDropdown');
+        if (langBtn && langDropdown) {
+            langBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langDropdown.classList.toggle('open');
+            });
+            document.addEventListener('click', () => langDropdown.classList.remove('open'));
+        }
     </script>
 
 </body>

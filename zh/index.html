@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studyr — 学生智能学习伙伴</title>
+    <meta name="description" content="Studyr 是一款面向学生的 AI 驱动学习应用。上传文档、获取 AI 摘要、创建测验和闪卡、整理笔记——一站式解决。">
+    <meta name="keywords" content="学习应用, AI摘要, 学生, 笔记, 闪卡, 测验, 文档管理, 教育">
+    <meta name="author" content="Studyr">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Studyr — 智能学习伙伴">
+    <meta property="og:description" content="AI 驱动学习应用：文档摘要、测验、闪卡和智能笔记，专为学生打造。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studyr.com/zh/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Studyr — 智能学习伙伴">
+    <meta name="twitter:description" content="AI 驱动学习应用：文档摘要、测验、闪卡和智能笔记，专为学生打造。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="../assets/logo.svg" alt="Studyr Logo" class="logo-icon"
+                    width="48" height="48"> Studyr</a>
+            <nav class="nav" id="nav">
+                <a href="#features">功能</a>
+                <a href="#pricing">价格</a>
+                <a href="privacy-policy.html">隐私</a>
+                <a href="terms-of-service.html">条款</a>
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langBtn">🌐 中文</button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <a href="../index.html" class="lang-option">🇬🇧 English</a>
+                        <a href="../tr/index.html" class="lang-option">🇹🇷 Türkçe</a>
+                        <a href="../de/index.html" class="lang-option">🇩🇪 Deutsch</a>
+                        <a href="../es/index.html" class="lang-option">🇪🇸 Español</a>
+                        <a href="../fr/index.html" class="lang-option">🇫🇷 Français</a>
+                        <a href="../it/index.html" class="lang-option">🇮🇹 Italiano</a>
+                        <a href="../ru/index.html" class="lang-option">🇷🇺 Русский</a>
+                        <a href="index.html" class="lang-option active">🇨🇳 中文</a>
+                    </div>
+                </div>
+                <a href="https://apps.apple.com/app/studyr" class="btn btn-primary"
+                    style="padding: 10px 24px; font-size: 0.9rem;" target="_blank" rel="noopener">下载</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="切换导航"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-up"><span class="dot"></span>iOS 和 Android 均可使用</div>
+            <h1 class="animate-fade-up delay-1">用 <span class="gradient-text">AI 驱动的</span>工具更聪明地学习</h1>
+            <p class="animate-fade-up delay-2">上传您的文档，获取即时 AI 摘要，生成测验和闪卡，做笔记——轻松通过考试。一切尽在一个精美的应用中。</p>
+            <div class="hero-buttons animate-fade-up delay-3">
+                <a href="https://apps.apple.com/app/studyr" class="btn btn-primary" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                    </svg>
+                    从 App Store 下载
+                </a>
+                <a href="#features" class="btn btn-secondary">探索功能 ↓</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="features">
+        <div class="container">
+            <h2 class="section-title">成功所需的<span class="gradient-text">一切</span></h2>
+            <p class="section-subtitle">强大的功能，旨在改变您学习、组织和记忆知识的方式。</p>
+            <div class="features-grid">
+                <div class="feature-card animate-fade-up">
+                    <div class="feature-icon">📄</div>
+                    <h3>文档上传与管理</h3>
+                    <p>上传 PDF、DOCX、PPTX、TXT 和图片文件。使用智能文件夹系统整理一切。</p>
+                </div>
+                <div class="feature-card animate-fade-up delay-1">
+                    <div class="feature-icon">✨</div>
+                    <h3>AI 驱动摘要</h3>
+                    <p>通过 Gemini AI 即时获取文档的智能摘要。节省数小时的阅读时间。</p>
+                </div>
+                <div class="feature-card animate-fade-up delay-2">
+                    <div class="feature-icon">🌐</div>
+                    <h3>摘要翻译</h3>
+                    <p>将摘要翻译成 7 种语言：土耳其语、英语、德语、西班牙语、意大利语、俄语和中文。</p>
+                </div>
+                <div class="feature-card animate-fade-up delay-3">
+                    <div class="feature-icon">📝</div>
+                    <h3>智能笔记</h3>
+                    <p>在文档旁做笔记和编辑。将所有学习材料集中在一个地方。</p>
+                </div>
+                <div class="feature-card animate-fade-up delay-4">
+                    <div class="feature-icon">🧠</div>
+                    <h3>AI 测验与闪卡</h3>
+                    <p>使用 AI 从任何文档自动生成测验、闪卡并提取关键概念。</p>
+                </div>
+                <div class="feature-card animate-fade-up delay-5">
+                    <div class="feature-icon">☁️</div>
+                    <h3>云同步</h3>
+                    <p>通过安全的 Supabase 云存储在所有设备间无缝同步数据。</p>
+                </div>
+                <div class="feature-card animate-fade-up delay-3">
+                    <div class="feature-icon">🗂️</div>
+                    <h3>文件夹组织</h3>
+                    <p>创建文件夹，分类文档，保持学习资料库井井有条。</p>
+                </div>
+                <div class="feature-card animate-fade-up delay-4">
+                    <div class="feature-icon">🌙</div>
+                    <h3>深色与浅色主题</h3>
+                    <p>在深色和浅色模式之间切换，白天或夜晚都能舒适学习。</p>
+                </div>
+                <div class="feature-card animate-fade-up delay-5">
+                    <div class="feature-icon">🔐</div>
+                    <h3>安全的 Google 登录</h3>
+                    <p>使用 Google 账户安全登录。您的数据保持私密和安全。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="pricing" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">选择您的<span class="gradient-text">方案</span></h2>
+            <p class="section-subtitle">免费开始，准备好后升级。Studyr Pro 解锁 AI 学习工具的全部功能。</p>
+            <div class="pricing-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-tier">免费</div>
+                    <h3>¥0 <span>/ 永久</span></h3>
+                    <p class="subtitle">入门首选</p>
+                    <ul class="pricing-list">
+                        <li><span class="check">✓</span> 最多上传 5 个文档</li>
+                        <li><span class="check">✓</span> 每天 3 个 AI 摘要</li>
+                        <li><span class="check">✓</span> 基础笔记和文件夹</li>
+                        <li><span class="check">✓</span> 深色和浅色主题</li>
+                        <li><span class="cross">✗</span> 跨设备云同步</li>
+                        <li><span class="cross">✗</span> 500 页文档支持</li>
+                        <li><span class="cross">✗</span> 无限 AI 功能</li>
+                    </ul>
+                    <a href="https://apps.apple.com/app/studyr" class="btn btn-secondary"
+                        style="width: 100%; justify-content: center;" target="_blank" rel="noopener">免费开始</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="pricing-tier">Pro</div>
+                    <h3>升级 <span>应用内</span></h3>
+                    <p class="subtitle">为认真学习的学生</p>
+                    <ul class="pricing-list">
+                        <li><span class="check">✓</span> 无限文档上传</li>
+                        <li><span class="check">✓</span> 无限 AI 摘要</li>
+                        <li><span class="check">✓</span> 高级笔记和文件夹</li>
+                        <li><span class="check">✓</span> 深色和浅色主题</li>
+                        <li><span class="check">✓</span> 跨设备云同步</li>
+                        <li><span class="check">✓</span> 500 页文档支持</li>
+                        <li><span class="check">✓</span> 无限测验和闪卡</li>
+                    </ul>
+                    <a href="https://apps.apple.com/app/studyr" class="btn btn-primary"
+                        style="width: 100%; justify-content: center;" target="_blank" rel="noopener">下载并升级</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="index.html" class="logo"><img src="../assets/logo.svg"
+                            alt="Studyr Logo" class="logo-icon" width="48" height="48"> Studyr</a>
+                    <p>您的 AI 学习伙伴。上传、摘要、测验和整理——一个应用搞定。</p>
+                </div>
+                <div>
+                    <h4>法律</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">隐私政策</a></li>
+                        <li><a href="terms-of-service.html">服务条款</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>联系</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:support@studyr.com">support@studyr.com</a></li>
+                        <li><a href="https://apps.apple.com/app/studyr" target="_blank" rel="noopener">App Store</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>&copy; 2026 Studyr. 保留所有权利。</span><span>为全球学生用 ❤️ 制作</span></div>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle'), nav = document.getElementById('nav'); menuToggle.addEventListener('click', () => { menuToggle.classList.toggle('active'); nav.classList.toggle('active') }); nav.querySelectorAll('a').forEach(l => { l.addEventListener('click', () => { menuToggle.classList.remove('active'); nav.classList.remove('active') }) });
+        const ae = document.querySelectorAll('.animate-fade-up'), ob = new IntersectionObserver(e => { e.forEach(en => { if (en.isIntersecting) { en.target.style.animationPlayState = 'running'; ob.unobserve(en.target) } }) }, { threshold: .1 }); ae.forEach(el => { el.style.animationPlayState = 'paused'; ob.observe(el) });
+        const lb = document.getElementById('langBtn'), ld = document.getElementById('langDropdown'); if (lb && ld) { lb.addEventListener('click', e => { e.stopPropagation(); ld.classList.toggle('open') }); document.addEventListener('click', () => ld.classList.remove('open')) }
+    </script>
+</body>
+
+</html>

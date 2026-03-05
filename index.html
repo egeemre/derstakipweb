@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DersTakip — Smart Study Companion for Students</title>
-  <meta name="description" content="DersTakip is an AI-powered study app for students. Upload documents, get AI summaries, create quizzes, flashcards, and organize your notes — all in one place.">
-  <meta name="keywords" content="study app, AI summaries, student, notes, flashcards, quiz, document management, education">
-  <meta name="author" content="DersTakip">
+  <title>Studyr — Smart Study Companion for Students</title>
+  <meta name="description"
+    content="Studyr is an AI-powered study app for students. Upload documents, get AI summaries, create quizzes, flashcards, and organize your notes — all in one place.">
+  <meta name="keywords"
+    content="study app, AI summaries, student, notes, flashcards, quiz, document management, education">
+  <meta name="author" content="Studyr">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="DersTakip — Smart Study Companion">
-  <meta property="og:description" content="AI-powered study app: document summaries, quizzes, flashcards, and smart notes for students.">
+  <meta property="og:title" content="Studyr — Smart Study Companion">
+  <meta property="og:description"
+    content="AI-powered study app: document summaries, quizzes, flashcards, and smart notes for students.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://derstakip.com">
+  <meta property="og:url" content="https://studyr.com">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DersTakip — Smart Study Companion">
-  <meta name="twitter:description" content="AI-powered study app: document summaries, quizzes, flashcards, and smart notes for students.">
+  <meta name="twitter:title" content="Studyr — Smart Study Companion">
+  <meta name="twitter:description"
+    content="AI-powered study app: document summaries, quizzes, flashcards, and smart notes for students.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,14 +32,15 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- ======== Header ======== -->
   <header class="header" id="header">
     <div class="container">
       <a href="index.html" class="logo">
-        <div class="logo-icon">📚</div>
-        DersTakip
+        <img src="assets/logo.svg" alt="Studyr Logo" class="logo-icon" width="48" height="48">
+        Studyr
       </a>
 
       <nav class="nav" id="nav">
@@ -42,7 +48,21 @@
         <a href="#pricing">Pricing</a>
         <a href="privacy-policy.html">Privacy</a>
         <a href="terms-of-service.html">Terms</a>
-        <a href="https://apps.apple.com/app/derstakip" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;" target="_blank" rel="noopener">
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">🌐 EN</button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="index.html" class="lang-option active">🇬🇧 English</a>
+            <a href="tr/index.html" class="lang-option">🇹🇷 Türkçe</a>
+            <a href="de/index.html" class="lang-option">🇩🇪 Deutsch</a>
+            <a href="es/index.html" class="lang-option">🇪🇸 Español</a>
+            <a href="fr/index.html" class="lang-option">🇫🇷 Français</a>
+            <a href="it/index.html" class="lang-option">🇮🇹 Italiano</a>
+            <a href="ru/index.html" class="lang-option">🇷🇺 Русский</a>
+            <a href="zh/index.html" class="lang-option">🇨🇳 中文</a>
+          </div>
+        </div>
+        <a href="https://apps.apple.com/app/studyr" class="btn btn-primary"
+          style="padding: 10px 24px; font-size: 0.9rem;" target="_blank" rel="noopener">
           Download
         </a>
       </nav>
@@ -68,13 +88,16 @@
       </h1>
 
       <p class="animate-fade-up delay-2">
-        Upload your documents, get instant AI summaries, generate quizzes and flashcards, 
+        Upload your documents, get instant AI summaries, generate quizzes and flashcards,
         take notes — and ace your exams. All in one beautiful app.
       </p>
 
       <div class="hero-buttons animate-fade-up delay-3">
-        <a href="https://apps.apple.com/app/derstakip" class="btn btn-primary" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <a href="https://apps.apple.com/app/studyr" class="btn btn-primary" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+          </svg>
           Download on App Store
         </a>
         <a href="#features" class="btn btn-secondary">
@@ -155,7 +178,7 @@
     <div class="container">
       <h2 class="section-title">Choose Your <span class="gradient-text">Plan</span></h2>
       <p class="section-subtitle">
-        Start for free, upgrade when you're ready. DersTakip Pro unlocks the full power of AI study tools.
+        Start for free, upgrade when you're ready. Studyr Pro unlocks the full power of AI study tools.
       </p>
 
       <div class="pricing-wrapper">
@@ -173,7 +196,8 @@
             <li><span class="cross">✗</span> 500-page document support</li>
             <li><span class="cross">✗</span> Unlimited AI features</li>
           </ul>
-          <a href="https://apps.apple.com/app/derstakip" class="btn btn-secondary" style="width: 100%; justify-content: center;" target="_blank" rel="noopener">
+          <a href="https://apps.apple.com/app/studyr" class="btn btn-secondary"
+            style="width: 100%; justify-content: center;" target="_blank" rel="noopener">
             Get Started Free
           </a>
         </div>
@@ -192,7 +216,8 @@
             <li><span class="check">✓</span> 500-page document support</li>
             <li><span class="check">✓</span> Unlimited quizzes &amp; flashcards</li>
           </ul>
-          <a href="https://apps.apple.com/app/derstakip" class="btn btn-primary" style="width: 100%; justify-content: center;" target="_blank" rel="noopener">
+          <a href="https://apps.apple.com/app/studyr" class="btn btn-primary"
+            style="width: 100%; justify-content: center;" target="_blank" rel="noopener">
             Download &amp; Upgrade
           </a>
         </div>
@@ -206,8 +231,8 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <div class="logo-icon">📚</div>
-            DersTakip
+            <img src="assets/logo.svg" alt="Studyr Logo" class="logo-icon" width="48" height="48">
+            Studyr
           </a>
           <p>Your AI-powered study companion. Upload, summarize, quiz, and organize — all in one app.</p>
         </div>
@@ -223,14 +248,14 @@
         <div>
           <h4>Contact</h4>
           <ul class="footer-links">
-            <li><a href="mailto:support@derstakip.com">support@derstakip.com</a></li>
-            <li><a href="https://apps.apple.com/app/derstakip" target="_blank" rel="noopener">App Store</a></li>
+            <li><a href="mailto:support@studyr.com">support@studyr.com</a></li>
+            <li><a href="https://apps.apple.com/app/studyr" target="_blank" rel="noopener">App Store</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <span>&copy; 2026 DersTakip. All rights reserved.</span>
+        <span>&copy; 2026 Studyr. All rights reserved.</span>
         <span>Made with ❤️ for students everywhere</span>
       </div>
     </div>
@@ -270,7 +295,19 @@
       el.style.animationPlayState = 'paused';
       observer.observe(el);
     });
+
+    // Language switcher
+    const langBtn = document.getElementById('langBtn');
+    const langDropdown = document.getElementById('langDropdown');
+    if (langBtn && langDropdown) {
+      langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langDropdown.classList.toggle('open');
+      });
+      document.addEventListener('click', () => langDropdown.classList.remove('open'));
+    }
   </script>
 
 </body>
+
 </html>
